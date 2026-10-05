@@ -1,0 +1,31 @@
+{
+    "name": "heaventree/laravel-seo-mcp",
+    "description": "MCP (Model Context Protocol) server for Laravel: AI-tool layer over heaventree/laravel-seo storage plus GA4/Search Console reporting.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "mcp", "seo", "ga4", "search-console", "ai"],
+    "homepage": "https://github.com/heaventree/laravel-seo-mcp",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "illuminate/database": "^11.0|^12.0|^13.0",
+        "illuminate/http": "^11.0|^12.0|^13.0",
+        "heaventree/laravel-seo": "^0.2",
+        "google/analytics-data": "^0.21",
+        "google/apiclient": "^2.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "Heaventree\\SeoMcp\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Heaventree\\SeoMcp\\LaravelSeoMcpServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
